@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "TestFrameworkpackage",
     platforms: [
-        .iOS(.v14), .iOS(.v15)
+        .iOS(.v14)
     ],
 
     products: [
@@ -14,10 +14,6 @@ let package = Package(
         .library(
             name: "TestFrameworkpackage",
             targets: ["TestFrameworkpackage"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -29,7 +25,7 @@ let package = Package(
 //            name: "TestFrameworkpackageTests",
 //            dependencies: ["TestFrameworkpackage"]),
         .binaryTarget(
-            name: "CalendarControl",
+            name: "TestFrameworkpackage",
             path: "./Sources/TestFramework.xcframework")
     ]
 )
